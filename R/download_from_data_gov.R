@@ -1,13 +1,13 @@
-#' Download temp visa holders
+#' Download data.gov.au data
 #'
 #' @param search_term (default = "name:temporary visa", character) the CKAN search term you are using to look for
-#' @param path
+#' @param path (default = "data/DoHA_temp_visa_holders.xlsx"; character) the filepath where to save the data
 #'
 #' @return
 #' @export
 #'
 #' @examples
-download_temp_visa_holders_data_gov <- function(search_term = "name:temporary visa",
+download_data_gov <- function(search_term = "name:temporary visa",
                                                 path = "data/DoHA_temp_visa_holders.xlsx") {
   res_temp_visa <- ckanr::resource_search(
     url = "https://data.gov.au",
