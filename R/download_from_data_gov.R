@@ -38,7 +38,7 @@ download_data_gov <- function(search_term = "name:temporary visa",
 #' @examples
 #'
 #' \dontrun{get_temp_visa_holders}
-get_temp_visa_holders <- function(path = file.path(tempdir(), "temp.xlsx"),
+get_temp_visa_holders <- function(path = file.path(tempdir(), "temp.xlsx") ,
                                   detailed = FALSE) {
   download_data_gov(search_term = "name:temporary visa",
                     path = path)
