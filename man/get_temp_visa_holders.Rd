@@ -4,7 +4,10 @@
 \alias{get_temp_visa_holders}
 \title{Download the temporary visa holders data from data.gov and clean it}
 \usage{
-get_temp_visa_holders(path, detailed = FALSE)
+get_temp_visa_holders(
+  path = file.path(tempdir(), "temp.xlsx"),
+  detailed = FALSE
+)
 }
 \arguments{
 \item{path}{(character) where to save the file}
